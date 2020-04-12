@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Corona Self Assesment and Testing Labs Info</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="master.css"/>
+        <link rel="stylesheet" href="fontawesome.min.css"/>
+        <link rel="shortcut icon" href="#"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js"></script>
+
+    </head>
+
+    <body class="app sidebar-show">
+        
+        <header id="desc" class="app-header">
+            <lottie-player
+                        src="https://assets7.lottiefiles.com/private_files/lf30_1KyL2Q.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay >
+                </lottie-player>
+            <div class="boy_computer">
+                
+                
+                 <lottie-player
+                        src="https://assets4.lottiefiles.com/private_files/lf30_ym2HXd.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; left: 30%;"  loop autoplay >
+                </lottie-player>
+                
+            </div>
+            
+
+            <h2><b>Co</b>rona <b>S</b>elf <b>Ass</b>esment</h2>
+           
+            <p>Due to the COVID-19 pandemic, many hospitals and test centres have exceeded their treatment capacities and suffer from a lack of resources. Lots of time and majority of resources are being spent on testing for the virus alone. <strong >CoSAss </strong>helps you to find out probability of someone having infection on the basis of symptoms. This will help test centres to prioritize the tests under limited testing capacity. <strong >CoSAss </strong> works not only to help "flatten the curve" by helping prioritize the tests, but also to "raise the line" that symbolizes healthcare system capacity. Click below to take the test.<br> <strong>#raisetheline</strong></p>
+            <a href="#" class="github-corner" aria-label="View source on GitHub">
+                <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+                   <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                   <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                   <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                </svg>
+             </a>
+             <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+
+        </header>
+
+        <div id="map">
+            <form action="#" onsubmit="patientSubmit()">
+                <div id="choose_form" class="form_page">
+                    <button id="patient_button" type="button">CoSAss</button>
+                    <button id="hospital_button" type="button">Instructions</button>
+                </div>
+                <div class="form_page" >
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <div class="form-group">
+                                <label class="text_label" for="patient_name">Full Name:</label>
+                                <input id="patient_name" class="form-control" type="text" name="patient_name"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="text_label" for="age">Age:</label>
+                                <input id="age" class="form-control"type="number" name="age"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="text_label" for="address">Address (Auto-Filled):</label>
+                                <input id="address" class="form-control" type="text" name="address" value=""/>
+                            </div>
+                            <fieldset id="transportation" class="form-group">
+                                <legend>Your preferred method of transportation?</legend>
+                                <div class="mc_container">
+                                    <input id="walking" type="radio" name="transportation" value="walking">
+                                    <label for="walking">Walking</label>
+                                </div>
+                                <div class="mc_container">
+                                    <input id="bicycling" type="radio" name="transportation" value="bicycling">
+                                    <label for="bicycling">Bicycling</label>
+                                </div>
+                                <div class="mc_container">
+                                    <input id="driving" type="radio" name="transportation" value="driving">
+                                    <label for="driving">Driving</label>
+                                </div>
+                                <div class="mc_container">
+                                    <input id="transit" type="radio" name="transportation" value="transit">
+                                    <label for="transit">Transit</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <fieldset class="form-group col-md-4">
+                            <legend>Please check off all symptoms you have pertaining to COVID-19</legend>
+                            <div class="mc_container">
+                                <input id="fever" type="checkbox" name="is_corona" value="fever">
+                                <label for="fever">Fever</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="dry_cough" type="checkbox" name="is_corona" value="dry_cough">
+                                <label for="dry_cough">Dry Cough</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="fatigue" type="checkbox" name="is_corona" value="fatigue">
+                                <label for="fatigue">Fatigue</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="phlegm" type="checkbox" name="is_corona" value="phlegm">
+                                <label for="phlegm">Phlegm</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="short_breath" type="checkbox" name="is_corona" value="short_breath">
+                                <label for="short_breath">Shortness of Breath</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="throat_headache" type="checkbox" name="is_corona" value="throat_headache">
+                                <label for="throat_headache">Sore Throat or Headache</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="chills" type="checkbox" name="is_corona" value="chills">
+                                <label for="chills">Chills</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="vomiting" type="checkbox" name="is_corona" value="vomiting">
+                                <label for="vomiting">Vomiting</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="nasal_congestion" type="checkbox" name="is_corona" value="nasal_congestion">
+                                <label for="nasal_congestion">Nasal Congestion</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="diarrhea" type="checkbox" name="is_corona" value="diarrhea">
+                                <label for="diarrhea">Diarrhea</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group col-md-4">
+                            <legend>Select the medical conditions that you may have previously</legend>
+                            <div class="mc_container">
+                                <input id="high_bp" type="checkbox" name="pre_conditions" value="high_bp">
+                                <label for="high_bp">High Blood Pressure</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="heart_problems" type="checkbox" name="pre_conditions" value="heart_problems">
+                                <label for="heart_problems">Heart Problems</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="diabetes" type="checkbox" name="pre_conditions" value="diabetes">
+                                <label for="diabetes">Diabetes</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="asthma" type="checkbox" name="pre_conditions" value="asthma">
+                                <label for="asthma">Asthma</label>
+                            </div>
+                            <div class="mc_container">
+                                <input id="smoking" type="checkbox" name="pre_conditions" value="smoking">
+                                <label for="smoking">Any smoking-related conditions</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+                <div class="form_page">
+                    <div class="form-group">
+                        <p id ="Instructions"> How to remain safe during COVID 19 !!!</p>
+                        
+                        
+                        <div class="hands">
+                            <div class="left-container">
+                            <div class="left-content">
+                              <img id ="hands_" src="hands.gif">
+                            </div>
+                          </div>
+                          <div class="right-container">
+                              <div class="right-content">
+                                <h4>Clean Your Hands</h4>
+                                <p>Wash your hands often with soap and water before eating, food handling, after leaving the laavatory, after contact with 
+                                    bodily secretions, after coughing or sneezing, and after touching the used tissue paper. 
+                                </p>
+                              </div>
+                          </div>
+                        </div>
+
+
+                        <div class="mask">
+                            <div class="left-container">
+                            <div class="left-content">
+                              <img id ="mask_" src="mask.gif">
+                            </div>
+                          </div>
+                          <div class="right-container">
+                              <div class="right-content">
+                                <h4>Cover Your Mouth While Sneezing</h4>
+                                <p>Cover your mouth and nose with tissue paper or wear a mask if possible if you are sneezing or 
+                                    in public place.
+                                </p>
+                              </div>
+                          </div>
+                        </div>
+
+                       
+                        <div class="namaste">
+                            <div class="left-container">
+                            <div class="left-content">
+                              <img id ="namaste_" src="namaste.gif">
+                            </div>
+                          </div>
+                          <div class="right-container">
+                              <div class="right-content">
+                                <h4> Say No To Handshakes</h4>
+                                <p> Try to avoid handshakes as much as possible and do Namaste by hands or  say Hello if necessary.
+                                </p>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="home">
+                            <div class="left-container">
+                            <div class="left-content">
+                              <img id ="home_" src="home.gif">
+                            </div>
+                          </div>
+                          <div class="right-container">
+                              <div class="right-content">
+                                <h4> Maintain Social Distancing</h4>
+                                <p> If you are having symptoms stay home; do not take children with symptoms to child care 
+                                </p>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unwell">
+                                <h4> If you are feeling unwell, take CoSAss Test and then take their help:</h4>
+                                <div class="doctors">
+                                <lottie-player
+                                    src="https://assets3.lottiefiles.com/packages/lf20_wdXBRc.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop  autoplay >
+                                </lottie-player>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="control_buttons">
+                    <button class="next_prev" id="prev_button" type="button">Previous</button>
+                    <button class="next_prev" id="next_button" type="button">Next</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="report"></div>
+        <div id="results"></div>
+
+        <footer>
+            
+            Designed by Saket Saumya ©2020
+        </footer>
+
+        <script src="https://kit.fontawesome.com/f04558dfba.js" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_eoVwfEtZcQXlJV4o6khvpsfRT4i5vrM"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+
+      
+
+    </body>
+</html>

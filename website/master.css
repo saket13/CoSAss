@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+html, body {
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1% 5%;
+}
+
+.boy_computer {
+    width: 20%;
+    display: block;
+    margin: auto;
+    padding-bottom: 0rem;
+}
+.corona {
+  width: 20%;
+  display: block;
+  margin: auto;
+  padding-bottom: 0rem;
+}
+header > h2 > b{
+    color: #0f4c75;
+    text-align: center;
+    font-size: 35px;
+
+}
+header > h2{
+    text-align: center;
+
+}
+header > p {
+    font-size: 1.2em;
+    color: #3282b8;
+}
+
+strong {
+    color: #0f4c75;
+}
+
+body {
+    background:#a4d6f8;
+  }
+
+  
+  #patient_button {
+    background: inherit;
+    width: 12%;
+    margin:  0% 1%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #1879d3;
+    cursor: pointer;
+
+    color: #1879d3;
+    font-size: 1em;
+    padding: .5% 3%;
+  }
+  
+  #patient_button:hover {
+    animation: border-flicker 1s linear forwards;
+  }
+  
+  h1 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size:2.9em;
+    margin: 15px 0 0;
+    color: rgba(120, 0, 50, .5);
+  }
+  
+  div:hover h1 {
+    animation: text-flicker 2s linear forwards;
+  }
+  
+  div:hover .first {
+    animation: letter-flicker 3s linear infinite;
+  }
+  
+ 
+  
+  @keyframes border-flicker {
+ 
+    54% {
+      border: 3px solid #1879d3;
+      box-shadow: 0 0 15px -1px #1879d3, 
+      0 0 12px -1px #1879d3 inset;
+    }
+    100% {
+      border: 3px solid #1879d3;
+      box-shadow: 0 0 15px -1px #1879d3, 
+      0 0 12px -1px #1879d3 inset;
+    }
+  }
+  #hospital_button, #prev_button, #next_button {
+    background: inherit;
+    width: 12%;
+    margin:  0% 1%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #1879d3;
+    cursor: pointer;
+
+    color: #1879d3;
+    font-size: 1em;
+    padding: .5% 3%;
+  }
+  
+  #hospital_button:hover {
+    animation: border-flicker 1s linear forwards;
+  }
+  
+  h1 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size:2.9em;
+    margin: 15px 0 0;
+    color: rgba(120, 0, 50, .5);
+  }
+  
+  div:hover h1 {
+    animation: text-flicker 1s linear forwards;
+  }
+  
+  div:hover .first {
+    animation: letter-flicker 1s linear infinite;
+  }
+  
+
+  
+  @keyframes border-flicker {
+    
+    54% {
+      border: 3px solid #1879d3;
+      box-shadow: 0 0 15px -1px #1879d3, 
+      0 0 12px -1px #1879d3 inset;
+    }
+    100% {
+      border: 3px solid #1879d3;
+      box-shadow: 0 0 15px -1px #1879d3, 
+      0 0 12px -1px #1879d3 inset;
+    }
+  }
+  
+ .form_page{
+  scroll-behavior: smooth;
+
+ } 
+.text_label{
+
+  color: #1879d3;
+}
+.mc_container{
+  color: #1879d3
+}
+
+input[type="text"], input[type="number"] {
+    background: inherit;
+    color: #3282b8;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #1879d3;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    color: #3282b8;
+    background: inherit;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 2px solid #bd1628;
+}
+
+form {
+    background: #fdfdfd;
+    border: 1px solid #4699f8;
+    border-radius: 5px;
+    margin: 0% 5%;
+    padding: 2%;
+}
+
+.form {
+    padding-top: 10%;
+    background: #ffffff;
+    border: 1px solid #1879d3;
+    border-radius: 5px;
+    margin: 5% 5%;
+    padding: 2%;
+}
+
+label{
+
+    font-size: 1.2em;
+}
+legend {
+    color: #0f4183;
+    font-size: 1.2em;
+
+}
+
+fieldset {
+    display: inline-block;
+}
+
+.mc_container {
+    margin: 1% 2%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    text-align: center;
+    width: 250px;
+    border: 1px solid #62c5ff;
+    border-radius: 5px;
+}
+
+input[type="radio"] + label:hover, input[type="checkbox"] + label:hover {
+    background: #ffffff;
+}
+
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label {
+    background: #ffffff;
+    border: 2px solid #58bbf5;
+}
+
+footer {
+    font-size: 0.7em;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+#choose_form {
+    text-align: center;
+}
+
+#control_buttons {
+    text-align: center;
+}
+
+
+#right-panel {
+  float: bottom;
+  width: 48%;
+  padding-top: 2%;
+}
+
+.location_result {
+    background: #f5f5f5;
+    font-size: 1.3em;
+    color: #3282b8;
+    border-left: solid 3px #116cd3;
+    padding: 1% 2%;
+    margin: 1% 5%;
+}
+
+.location_result:hover {
+    box-shadow: 3px 3px #8ec3ff;
+}
+
+
+#lottie{
+  width: 300px; height: 300px;
+
+}
+#hands_, #home_, #namaste_, #mask_{
+  width: 400px; height: 400px;
+
+}
+h4{
+  color:black;
+  font-size: 40px;
+}
+.hands , .mask, .namaste, .home{
+  width: 100%;
+  height: 21vw;
+  margin-bottom: 150px; 
+  margin-top: 20px;
+  
+}
+
+.left-container {
+  float: left;
+  height: 21vw;
+  width: 50%;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 21vw;
+  width: 50%;
+  float: left;
+}
+
+.left-content {
+  width: 100%;
+  height: 21vw;
+}
+
+.right-content {
+  color: black;
+  max-width: 70%;
+}
+strong1{
+    color: black;
+    font-size: 30px;
+    margin-left: 10rem;
+    margin-top: 10 rem;
+}
+h5{
+  color: #1879d3;
+  margin: 10px, auto;
+  font-display: inherit;
+
+}
+.doctors{
+  width: 20%;
+  display: block;
+  margin-left: 300px;
+  margin-top: 50px;
+  
+}
+h6{
+  color: #1879d3;
+  margin: 10px, auto;
+  font-display: inherit;
+
+}
