@@ -1,4 +1,6 @@
 # CoSAss
 Covid- 19 Self Assesment Test...
 
-![](CoSAss.gif)
+<p align="center">
+  <img src="CoSAss.gif">
+</p>
