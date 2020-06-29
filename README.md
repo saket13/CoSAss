@@ -7,6 +7,6 @@ A tool to assess yourself against the symptoms of Covid-19 virus and get Testing
 
 ## Design
 
-This has been designed as the 
+Firstly, the data has been extracted 
 
 
